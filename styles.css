@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #101010;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #232D3F;
+    max-width: 500px;
+    /* width: fit-content; */
+    /* height: fit-content; */
+    /* margin: auto 20px; */
+}
+
+.container h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    word-break: normal;
+    color: rgb(206, 206, 206);
+}
+
+.container .advice_n {
+    padding: 10px;
+    color: #52FFA8;
+}
+
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 auto -40px;
+    outline: none;
+    border: none;
+    background-color: #52FFA8;
+    transition: all ease 0.5s;
+}
+
+button i {
+    font-size: 28px;
+    transition: all ease 0.5s;
+}
+
+button:hover .dice{
+    transform: rotate(45deg);
+}
+
+
+button:active .dice{
+    transform: rotate(360deg);
+}
+button:hover {
+
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #52ffa964;
+}
+button:active {
+    transform: scale(1.3);
+    box-shadow: 0 0 30px #52ffa9b5;
+}
