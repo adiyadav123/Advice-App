@@ -106,12 +106,13 @@ button:active {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    width: 10%;
 }
 
 .boxes {
     height: 20px;
-    width: 10px;
-    border-radius: 2px;
+    width: 7px;
+    border-radius: 3px;
     background-color: rgb(206, 206, 206);
 }
 
