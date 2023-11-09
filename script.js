@@ -3,6 +3,33 @@ const advice_number = document.querySelector(".advice_number");
 const advice_text = document.querySelector(".advice");
 var num = 1;
 
+function getNotificationPerm(){
+    Notification.requestPermission().then((permission) => {
+        if(permission == "granted"){
+            console.log("Permission granted");
+        } else {
+            console.log("Permission denied");
+        }
+    })
+    
+}
+
+getNotificationPerm();
+
+async function DailyAdvice(){
+    localStorage.setItem("advice_num", num);
+    let response = await fetch("https://api.adviceslip.com/advice");
+    let data = await response.json();
+    let adiv = data.slip.advice;
+    new Notification("Daily Advice",{
+        body: `${adiv}`
+    })
+}
+
+setTimeout(() => {
+    DailyAdvice();
+}, 86400000);
+
 
 if(localStorage.getItem("advice_num")){
     let advNum = localStorage.getItem("advice_num");
