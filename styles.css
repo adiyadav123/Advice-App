@@ -92,6 +92,36 @@ button:active {
     color: rgb(206, 206, 206);
 }
 
+.divider {
+    width: 100%;
+    height: 20px;
+    padding: 10px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.boxes {
+    height: 20px;
+    width: 10px;
+    border-radius: 2px;
+    background-color: rgb(206, 206, 206);
+}
+
+.len {
+    height: 1px;
+    width: 50%;
+    background-color: #52FFA8;
+}
+
+
 .footer a {
     color: #52FFA8;
     text-decoration: none;
